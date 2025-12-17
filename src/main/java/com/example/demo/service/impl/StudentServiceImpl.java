@@ -1,7 +1,11 @@
 package com.example.demo.service.impl;
 
-import org.springframework.service.
 
+import org.springframework.stereotype.Service;
+import com.example.demo.entity.Student;
+import com.example.demo.service.StudentService;
+
+@Service
 public class StudentServiceImpl impliments StudentService{}
   @Override
     public Student poststudent(Student st){

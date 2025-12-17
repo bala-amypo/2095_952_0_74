@@ -1,10 +1,12 @@
 package com.example.demo.entity;
 
 import java.time.LocalDate;
-import jakarta.persistance.entity;
+import jakarta.persistance.*;
 
-@entity
+@Entity
 public class Student{
+        @id
+        @GenaratedValue
         private Long id;
         private String name;
         private String dept;

@@ -1,11 +1,11 @@
 package com.example.demo.entity;
 
 import java.time.LocalDate;
-import jakarta.persistance.*;
+import jakarta.persistence.*;
 
 @Entity
 public class Student{
-        @id
+        @Id
         @GeneratedValue(strategy=GenerationType.IDENTITY)
         private Long id;
         private String name;

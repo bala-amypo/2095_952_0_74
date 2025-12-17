@@ -1,7 +1,9 @@
 package com.example.demo.entity;
 
 import java.time.LocalDate;
+import jakarta.persistance.entity;
 
+@entity
 public class Student{
         private Long id;
         private String name;
@@ -42,6 +44,12 @@ public class Student{
         public Student(){
 
         }
-        public Student()
+        public Student(Long id,String name,String dept,LocalDate dob,float cgpa){
+                this.id=id;
+                this.name=name;
+                this.dept=dept;
+                this.dob=dob;
+                this.cgpa=cgpa;
+        }
        
 }

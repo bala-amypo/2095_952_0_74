@@ -9,8 +9,14 @@ import com.example.demo.service.StudentService;
 public class StudentController{
   @Autowired
   StudentService stdser;
+
   @PostMapping("/addStudent")
   public Student addStudent(@RequestBody Student st){
     return stdser.poststudent(st);
   }
+   @GetMapping("/getAll")
+        public List<student> getAll(){
+            return stdser.getAllStudent(st);
+        }
+     
 }

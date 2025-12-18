@@ -11,7 +11,7 @@ public class Student{
         private String name;
         private String dept;
         private LocalDate dob;
-        private float cgpa;
+        private float cgpa; 
 
         public Long getId(){
                 return id;

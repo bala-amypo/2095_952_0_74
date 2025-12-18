@@ -26,8 +26,8 @@ public class StudentController{
      return stdser.getById(id);
   }
   @PutMapping("/Update/{id}")
-  public String update(Long id,student st){
-    return stdrepo.
+  public String update(Long id,Student st){
+    return stdser.existBy(Long id);
   }
      
 }

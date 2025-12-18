@@ -25,6 +25,12 @@ public class StudentServiceImpl implements StudentService{
      public Optional<Student> getById(Long id){
           return stdrepo.findById(id);
     }
-    @
+    @Override
+    public String updateData(Long id,Student st){
+        boolean Status=stdrepo.existById(id);
+        if(Status){
+            
+        }
+    }
 
 }

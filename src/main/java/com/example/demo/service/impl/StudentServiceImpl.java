@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.demo.entity.Student;
 import java.util.List;
+import java.util.Optional;
+
 import com.example.demo.service.StudentService;
 import com.example.demo.repository.StudentRepository;
 
@@ -20,7 +22,7 @@ public class StudentServiceImpl implements StudentService{
         return stdrepo.findAll();
     }
     @Override
-     public Optional<Student> getById(int id){
+     public Optional<Student> getById(Long id){
           return stdrepo.findById(id);
     }
 

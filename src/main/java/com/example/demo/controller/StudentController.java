@@ -3,6 +3,8 @@ package com.example.demo.controller;
 import org.springframework.web.bind.annotation.*;
 import com.example.demo.entity.Student;
 import java.util.*;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.service.StudentService;
 
@@ -21,7 +23,7 @@ public class StudentController{
   }
   @GetMapping("/GetById/{id}")
   public Optional<Student> getById(@PathVariable Long id){
-     return std getById(id);
+     return stdser.getById(id);
   }
      
 }

@@ -14,6 +14,7 @@ public class Student{
         private String dept;
         @Past(message="yy")
         private LocalDate dob;
+        @DecimalMin(value=1.5)
         private float cgpa; 
 
         public Long getId(){

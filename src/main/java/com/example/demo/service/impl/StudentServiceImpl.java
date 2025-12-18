@@ -19,5 +19,6 @@ public class StudentServiceImpl implements StudentService{
     public List<Student> getAllStudent(){
         return stdrepo.findAll();
     }
+    
 
 }

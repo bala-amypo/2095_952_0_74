@@ -12,6 +12,7 @@ public class Student{
         @NotBlank(message="No")
         private String name;
         private String dept;
+        @Past(message="yy")
         private LocalDate dob;
         private float cgpa; 
 

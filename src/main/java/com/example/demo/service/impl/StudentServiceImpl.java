@@ -27,7 +27,7 @@ public class StudentServiceImpl implements StudentService{
     }
     @Override
     public String updateData(Long id,Student st){
-        boolean Status=stdrepo.existById(id);
+        boolean Status=stdrepo.existsById(id);
         if(Status){
             st.setId(id);
             stdrepo.save(id);

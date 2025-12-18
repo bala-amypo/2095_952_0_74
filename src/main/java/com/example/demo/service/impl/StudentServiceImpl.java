@@ -29,7 +29,13 @@ public class StudentServiceImpl implements StudentService{
     public String updateData(Long id,Student st){
         boolean Status=stdrepo.existById(id);
         if(Status){
-            
+            st.setId(id);
+            stdrepo.save(id);
+            return "Student updated successfully";
+
+        }
+        else{
+            return "Student with "+id+"not found";
         }
     }
 

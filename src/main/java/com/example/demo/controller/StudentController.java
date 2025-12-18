@@ -25,5 +25,9 @@ public class StudentController{
   public Optional<Student> getById(@PathVariable Long id){
      return stdser.getById(id);
   }
+  @PutMapping("/Update/{id}")
+  public String update(Long id,student st){
+    return stdrepo.
+  }
      
 }

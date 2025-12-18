@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-import jakarta.validation.constrain.*;
+import jakarta.validation.constraints.*;
 import java.time.LocalDate;
 import jakarta.persistence.*;
 
@@ -9,7 +9,7 @@ public class Student{
         @Id
         @GeneratedValue(strategy=GenerationType.IDENTITY)
         private Long id;
-        @NotNot(message="no")
+        @NotNull(message="no")
         private String name;
         private String dept;
         private LocalDate dob;
